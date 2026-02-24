@@ -29,16 +29,16 @@ const Memberdetails = () => {
           <div className="w-1/3 mx-auto">
             <img
               className="w-full  mx-auto"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvh__gaSNB7WE4R7BcQEUU7oNt-zM5Sxk2pA&s"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHocDGl6rP_Qheul8pRJo1gFyzYzHQc9oaBw&s"
               alt=""
             />
           </div>
           <div className="w-2/3 mt-5 text-xl p-5 ">
             <div className="mt-1 mb-2 text-2xl font-semibold">
-              Name: SONIYA{" "}
+              Name: Cbum{" "}
             </div>
             <div className="mt-1 mb-2 text-2xl font-semibold">
-              Mobile: 9643919040{" "}
+              Mobile: 9 19040{" "}
             </div>
             <div className="mt-1 mb-2 text-2xl font-semibold">
               Address: kuch bhi{" "}
