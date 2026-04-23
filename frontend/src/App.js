@@ -27,7 +27,7 @@ function App() {
         navigate('/');
       }
     }
-  }, [location.pathname]);
+  }, [location.pathname, navigate]);
 
   return (
     <div className="flex">
