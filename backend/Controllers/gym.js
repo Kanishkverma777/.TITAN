@@ -38,8 +38,8 @@ exports.register = async(req,res)=>{
 
 const cookieOptions = {
     httpOnly: true,
-    secure: false, // Set to true in production
-    sameSite: 'Lax',
+    secure: true, // Required for cross-site cookies on Render
+    sameSite: 'none', // Required for Vercel to talk to Render
     maxAge: 24 * 60 * 60 * 1000 // 1 day
 };
 
