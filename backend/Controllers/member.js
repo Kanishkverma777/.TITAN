@@ -65,8 +65,11 @@ exports.registerMember = async(req,res)=>{
         }
 
         if(memberShip){
+            // Generate a more unique ID to avoid collisions
+            // We use the current timestamp's last 3 digits + a random number to ensure uniqueness
+            const uniqueSuffix = Math.floor(Math.random() * 1000);
             const totalMembers = await Member.countDocuments({gym:req.gym._id});
-            const memberId = `GYM-${totalMembers + 101}`; 
+            const memberId = `GYM-${Date.now().toString().slice(-4)}-${totalMembers + 101}`; 
             
             const nextBillDate = addMonthsToDate(memberShip.months, joiningDate || new Date());
             
